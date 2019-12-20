@@ -1,0 +1,21 @@
+#!/bin/sh
+echo "#" $(basename $PWD) >> README.md
+echo "## Datasets" >> README.md
+DIR='./datasets/'
+for files in "$DIR"*
+do 
+	echo "- ["$(basename $files)"]("$files")">> README.md 
+done 
+echo "## Models" >> README.md
+DIR='./models/'
+for files in "$DIR"*
+do
+        echo "- ["$(basename $files)"]("$files")">> README.md
+done
+DIR='./experiments/'
+echo "## Experiments" >> README.md
+for files in "$DIR"*
+do
+        echo "- ["$(basename $files)"]("$files")">> README.md
+done
+

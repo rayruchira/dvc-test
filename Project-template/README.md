@@ -1,0 +1,12 @@
+# Project-template
+## Datasets
+- [README.md](./datasets/README.md)
+- [Setup](./datasets/Setup)
+- [big.h5](./datasets/big.h5)
+## Models
+- [README.md](./models/README.md)
+- [Setup](./models/Setup)
+- [model.h5](./models/model.h5)
+## Experiments
+- [README.md](./experiments/README.md)
+- [Setup](./experiments/Setup)

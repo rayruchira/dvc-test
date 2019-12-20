@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "#" $(basename $PWD) >> README.md
+DIR= $PWD
+for files in "$DIR"*
+do
+        echo "- ["$(basename $files)"]("$files")">> README.md
+done
+
+
